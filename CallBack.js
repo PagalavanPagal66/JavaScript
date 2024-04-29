@@ -1,11 +1,7 @@
 function A(callback){
     console.log("A started");
-    setTimeout(
-    ()=> {
-    	console.log("A - timeout");
-    	callback();
-   	}
-   	,1000); 	    
+    console.log("A - timeout");
+    callback();    
     console.log("A finished");
 }
 
